@@ -5,8 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap 5</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        [class*="col"] {
+            padding: 1rem;
+            background-color: #33b5e5;
+            border: 2 px solid #fff;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- For containers-->
+    <div class="container-md">
+        <div class="row">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div>
+            <div class="col-sm">3</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">This is a main bar</div>
+            <div class="col-md-4">This is a side bar</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- For gutter X -->
+    <h2>Gutter</h2>
+    <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 border">Custom Borders</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border">Custom Borders</div>
+            </div>
+        </div>
+    </div>
+    <!-- For gutter Y -->
+    <div class="container px-4">
+        <div class="row gy-15">
+            <div class="col">
+                <div class="p-3 border">Custom Borders</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border">Custom Borders</div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--Buttons-->
+    <h2>Buttons</h2>
+    <button type="button" class="btn btn-primary">primary</button>
+    <button type="button" class="btn btn-secondary">secondary</button>
+    <button type="button" class="btn btn-success">success</button>
+    <button type="button" class="btn btn-danger">danger</button>
+    <button type="button" class="btn btn-warning">warning</button>
+    <button type="button" class="btn btn-info">info</button>
+    <button type="button" class="btn btn-light">light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <!--For only button outlines-->
+    <h2>Button outlines</h2>
+    <button type="button" class="btn btn-outline-primary">primary</button>
+    <button type="button" class="btn btn-outline-secondary">secondary</button>
+    <button type="button" class="btn btn-outline-success">success</button>
+    <button type="button" class="btn btn-outline-danger">danger</button>
+    <button type="button" class="btn btn-outline-warning">warning</button>
+    <button type="button" class="btn btn-outline-info">info</button>
+    <button type="button" class="btn btn-outline-light">light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-link">Link</button>
+
+    <!--Button Sizes-->
+    <h2>Button sizes</h2>
+    <button type="button" class="btn btn-outline-primary btn-sm">primary small</button>
+    <button type="button" class="btn btn-outline-primary btn-md">primary medium</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">primary large</button>
+    <button type="button" class="btn btn-outline-primary btn-lg" disabled>primary large</button>
+
+    <hr style="background: red;">
+    <!--For Cards-->
+    <h2>Cards</h2>
+    <div class="card">
+        <div class="card body">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, adipisci?Lorem ipsum dolor sit, amet 
+            consectetur adipisicing elit. Laborum, adipisci?Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Laborum, adipisci?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, adipisci?</p>
+        </div>
+        <!--changing the structure of cards by two methods-->
+    </div>
+
+    <div class="card body-2" style="width: 10rem;">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, adipisci?Lorem ipsum dolor sit, amet 
+        consectetur adipisicing elit. Laborum, adipisci?Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Laborum, adipisci?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, adipisci?</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4" style="color: #333;">
+            <div class="card body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, adipisci?Lorem ipsum dolor sit, amet 
+                consectetur adipisicing elit. Laborum, adipisci?Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Laborum, adipisci?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, adipisci?</p>
+            </div>
+        </div>
+    </div>
+
+    <!--card with images-->
+    <div class="card my-3" style="width: 18rem;">
+        <img src="./IMG_7238.jpg" class="card-img-top" alt="Card image">
+        <div class="card-body">
+            <h5 class="card-title">The section below heading</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ipsum.</p>
+        </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 18rem;">
+        <div class="row g-0"></div>
+            <div class="col md-4">
+                <img src="./IMG_7767.jpg" alt="Second image" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <div class="card-title">Card Title</div>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, dignissimos?</p>
+                    <p class="card-text"><small>This is also belongs.</small></p>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
